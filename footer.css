@@ -1,0 +1,31 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer img {
+  width: 60px;
+  mix-blend-mode: multiply;
+}
+.social_media {
+  display: flex;
+  justify-content: center;
+  background-color: #f5c9b0;
+  gap: 15px;
+  padding-bottom: 10px;
+}
+.social_media img {
+  width: 30px;
+}
+.footer_logo {
+  width: 150px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+footer p {
+  background-color: #f5c9b0;
+}

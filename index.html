@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="hero.css" />
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="product_lists.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="dialog.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav_sec1">
+          <!-- logo -->
+          <div class="logo"></div>
+          <!-- <img
+            src="assets/logo.png"
+            alt=""
+            width="40px"
+            height="40px"
+            class="logo"
+          /> -->
+          <!-- links -->
+          <div class="nav_links">
+            <a
+              href="#hero_section"
+              class="nav-link active"
+              id="nav_hero_section"
+              >Home</a
+            >
+            <a href="#Featured" class="nav-link" id="nav_Featured">Featured</a>
+            <a href="#Recommended" class="nav-link" id="nav_Recommended"
+              >Recommended</a
+            >
+          </div>
+        </div>
+        <div class="nav_sec2">
+          <!-- searchbar and cart -->
+          <div class="searchbar_cart">
+            <div class="search_bar">
+              <button>
+                <!-- search icon -->
+                <img src="assets/magnifying-glass.svg" alt="" width="40px" />
+              </button>
+
+              <input
+                type="text"
+                placeholder="search product..."
+                id="search_bar_input"
+              />
+            </div>
+            <!-- cart -->
+            <div style="position: relative">
+              <img
+                src="assets/icons8-shopping-cart-96.png"
+                alt=""
+                width="40px"
+                id="cart_button"
+              />
+              <p class="products_number" id="products_number">0</p>
+            </div>
+          </div>
+
+          <!-- sign in and signup buttons -->
+          <div class="auth_buttons">
+            <button class="signup_button">sign up</button>
+            <button class="signin_button">sign in</button>
+          </div>
+        </div>
+      </nav>
+      <!-- <hr /> -->
+    </header>
+
+    <main>
+      <!-- hero section -->
+      <section class="hero_section" id="hero_section">
+        <!-- copy text -->
+        <div class="hero_copy">
+          <p class="hero_main_copy">
+            <b>Time, Upgraded.</b>
+          </p>
+          <p class="hero_sub_copy">
+            Experience the next generation of smartwatches precision
+            engineering, intelligent features, and style that never sleeps.
+          </p>
+          <a class="cta_button" href="#Featured">Shop Now &rarr;</a>
+        </div>
+        <!-- hero image -->
+        <div>
+          <img src="assets/hero image.jpg" alt="" class="hero_image" />
+        </div>
+      </section>
+      <section class="Featured_section list_section">
+        <div class="list_section_title">
+          <p class="list_title">Featured</p>
+          <a href="" class="See_All">See All</a>
+        </div>
+        <section class="product_list" id="Featured"></section>
+      </section>
+      <section class="Recommended_section list_section">
+        <div class="list_section_title">
+          <p class="list_title">Recommended</p>
+          <a href="" class="See_All">See All</a>
+        </div>
+        <section class="product_list" id="Recommended"></section>
+      </section>
+      <section class="cart" id="cart_list">
+        <div class="cart_top">
+          <div class="basket_text">
+            <p class="My_Basket">My Basket</p>
+            <p class="items_p">( <span id="items_p_span">0</span> items)</p>
+          </div>
+          <div class="cart_actions">
+            <button id="close_cart">Close</button>
+            <button class="clear_btn" id="clear_all_cart">Clear Basket</button>
+          </div>
+        </div>
+
+        <div class="basket_items" id="basket_items">
+          <!-- no items found -->
+          <!-- <div class="cart_item">
+            <div class="opperations_product_cart">
+              <button>+</button>
+              <button>-</button>
+            </div>
+            <div class="image_product_cart">
+              <img
+                src="assets/product_images/Samsung Galaxy Watch 7.avif"
+                alt=""
+              />
+            </div>
+            <div class="cart_item_details">
+              <div class="cart_item_title">Samsung Galaxy Watch 8</div>
+              <div class="small_details">
+                <div>
+                  <p>brand</p>
+                  <p>samsung</p>
+                </div>
+                <div style="text-align: center">
+                  <p>quantity</p>
+                  <p>4</p>
+                </div>
+                <div style="text-align: left">
+                  <p>color</p>
+                  <p>green</p>
+                </div>
+              </div>
+            </div>
+            <div class="cart_item_price">400.99$</div>
+            <div class="cart_x_section"><button class="cart_x">x</button></div>
+          </div> -->
+        </div>
+        <div style="width: 100%">
+          <hr />
+          <div class="cart_checkout">
+            <div>
+              <p
+                class="items_p"
+                style="padding-bottom: 10px; padding-top: 10px"
+              >
+                Total Amount:
+              </p>
+              <p class="amount" id="total_price">$0.00</p>
+            </div>
+            <button>CHECK OUT</button>
+          </div>
+        </div>
+      </section>
+      <div class="dialog_container_none" id="dialog_container">
+        <div class="dialog"></div>
+      </div>
+    </main>
+    <footer>
+      <img src="assets/logo.png" alt="" class="footer_logo" />
+      <p>&copy 2025</p>
+      <div class="social_media">
+        <img src="assets/Social media assets/facebook.svg" alt="" /><img
+          src="assets/Social media assets/instegram.svg"
+          alt=""
+        /><img src="assets/Social media assets/twitter.svg" alt="" />
+      </div>
+    </footer>
+    <script type="module" src="search.js"></script>
+    <script type="module" src="./product.js"></script>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="product_list.js"></script>
+    <script type="module" src="cart.js"></script>
+    <!-- <script type="module" src="dialog.js"></script> -->
+  </body>
+</html>
