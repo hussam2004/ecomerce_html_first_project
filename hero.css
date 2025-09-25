@@ -41,3 +41,44 @@
 body {
   height: 1000px;
 }
+
+/* Mobile (up to 480px) */
+@media (max-width: 480px) {
+  .hero_image {
+    display: none;
+  }
+  .hero_section {
+    flex-direction: column;
+    /* text-align: center; */
+    margin-top: 80px;
+    padding: 15px;
+  }
+  .hero_copy {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+  .hero_main_copy {
+    width: 100%;
+    font-size: 2.5rem;
+  }
+}
+
+/* Small tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* styles for tablets */
+}
+
+/* Medium devices (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* styles for landscape tablets and small laptops */
+}
+
+/* Large devices (1025px to 1200px) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  /* styles for desktops */
+}
+
+/* Extra large screens (above 1200px) */
+@media (min-width: 1201px) {
+  /* styles for large desktops and wide monitors */
+}

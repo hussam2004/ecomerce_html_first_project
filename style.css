@@ -165,3 +165,73 @@ button {
 .social_media img {
   cursor: pointer;
 }
+
+.hambutger_menu {
+  display: none;
+  width: 25px;
+  cursor: pointer;
+}
+
+/* Mobile (up to 480px) */
+@media (max-width: 480px) {
+  .logo {
+    margin-left: 10px;
+    width: 80px;
+    height: 40px;
+  }
+  .auth_buttons {
+    display: none;
+  }
+  .nav-link {
+    display: none;
+  }
+  .nav_links {
+    display: none;
+  }
+  .search_bar {
+    display: none;
+  }
+  .searchbar_cart {
+    display: none;
+  }
+  .hambutger_menu {
+    display: block;
+    color: gray;
+    /* margin-right: 10px; */
+    /* justify-self: flex-end; */
+    margin-right: 25px;
+  }
+  header {
+    right: 0;
+    left: 0;
+    padding-right: 10px;
+  }
+  .nav_sec2 {
+    justify-content: flex-end;
+  }
+  nav {
+    height: 30px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* Small tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* styles for tablets */
+}
+
+/* Medium devices (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* styles for landscape tablets and small laptops */
+}
+
+/* Large devices (1025px to 1200px) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  /* styles for desktops */
+}
+
+/* Extra large screens (above 1200px) */
+@media (min-width: 1201px) {
+  /* styles for large desktops and wide monitors */
+}

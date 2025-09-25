@@ -8,7 +8,7 @@ function debounce(cb, dely = 5_00) {
   }, dely);
 }
 
-function searchProducts(e) {
+function  Products(e) {
   debounce(() => {
     const inputValue = getInputValue().toLowerCase();
     const matchedProducts = Products.filter((product) =>

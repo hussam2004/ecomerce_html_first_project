@@ -1,9 +1,12 @@
 import { Products } from "./product.js";
 
-// console.log(Products);
+//elements variables declaration from dom
 const cart_icon = document.getElementById("cart_button");
-let cart_items = JSON.parse(localStorage.getItem("added_to_cart"));
 const cart_amount = document.getElementById("products_number");
+
+
+let cart_items = JSON.parse(localStorage.getItem("added_to_cart"));
+
 cart_icon.addEventListener("click", () => {
   cart_amount.classList.add("products_number_hover");
   cart_amount.innerHTML = cart_items.length;
@@ -18,40 +21,7 @@ function show_cart_items() {
 }
 show_cart_items();
 
-/*
-<div class="cart_item">
-    <div class="opperations_product_cart">
-        <button>+</button>
-        <button>-</button>
-    </div>
-    <div class="image_product_cart">
-        <img
-            src="assets/product_images/Samsung Galaxy Watch 7.avif"
-            alt=""
-        />
-    </div>
-    <div class="cart_item_details">
-        <div class="cart_item_title">Samsung Galaxy Watch 8</div>
-            <div class="small_details">
-                <div>
-                  <p>brand</p>
-                  <p>samsung</p>
-                </div>
-                <div style="text-align: center">
-                  <p>quantity</p>
-                  <p>4</p>
-                </div>
-                <div style="text-align: left">
-                  <p>color</p>
-                  <p>green</p>
-                </div>
-            </div>
-        </div>
-    <div class="cart_item_price">400.99$</div>
-    <div class="cart_x_section"><button class="cart_x">x</button></div>
-</div>
 
-*/
 export function can_createCartItem(product) {
   const ls = JSON.parse(localStorage.getItem("added_to_cart"));
   const is_existed_cart_item = ls.find((e) => e.id === product.id);
@@ -63,24 +33,7 @@ export function can_createCartItem(product) {
 }
 
 export function createCartItem(product) {
-  /*
-    product = {
-      name: "Samsung Galaxy Watch 8",
-      brand: "Samsung",
-      quantity: 4,
-      color: "Green",
-      price: 400.99,
-      image: "assets/product_images/Samsung Galaxy Watch 7.avif"
-    }
-  */
-
-  //   ls.forEach((e) => {
-  //     if (e.id === product.id) {
-  //       increase_cart_item(product);
-  //       return;
-  //     }
-  //   });
-
+  
   // Create main container
   const cartItem = document.createElement("div");
   cartItem.classList.add("cart_item");
