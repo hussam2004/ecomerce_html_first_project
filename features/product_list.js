@@ -1,4 +1,4 @@
-import { Products } from "./product.js";
+import { Products } from "../data/product.js";
 import { render_merged, merged } from "./cart.js";
 import { can_createCartItem, createCartItem } from "./cart.js";
 import { card_click } from "./dialog.js";

@@ -1,4 +1,4 @@
-import { Products } from "./product.js";
+import { Products } from "../data/product.js";
 import { create_product } from "./product_list.js";
 let timeoutId;
 function debounce(cb, dely = 5_00) {
