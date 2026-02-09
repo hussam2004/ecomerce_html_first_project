@@ -78,7 +78,7 @@ nav div {
   height: 51px;
   background-size: cover;
   background-position: center;
-  background-image: url("assets/logo.png");
+  background-image: url("/assets/logo.png");
 }
 .auth_buttons {
   display: flex;

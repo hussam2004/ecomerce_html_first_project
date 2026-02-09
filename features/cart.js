@@ -1,4 +1,4 @@
-import { Products } from "./product.js";
+import { Products } from "../data/product.js";
 
 //elements variables declaration from dom
 const cart_icon = document.getElementById("cart_button");

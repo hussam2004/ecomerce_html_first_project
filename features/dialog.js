@@ -1,4 +1,4 @@
-import { Products } from "./product.js";
+import { Products } from "../data/product.js";
 import { render_merged } from "./cart.js";
 
 const dialog_container = document.getElementById("dialog_container");
